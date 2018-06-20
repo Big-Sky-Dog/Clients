@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="assets/mui/css/mui.min.css">
+	<link rel="stylesheet" href="assets/mui/css/iconfont.css">
+	<link rel="stylesheet" href="assets/fontAwesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/search.css">
+	<script src="assets/axios/axios.min.js"></script>
+	<script src="assets/artTemplate/template-native.js"></script>
+	<script src="assets/zepto/zepto.min.js"></script>
+	<script src="assets/mui/js/mui.min.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/search.js"></script>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav header">
+		<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		<h1 class="mui-title">搜索中心</h1>
+	</header>
+	@@include('./common/footer.html')
+	<div class="mui-scroll-wrapper">
+		<div class="mui-scroll">
+			<div class="container">
+				<div class="search">
+					<input type="text" id="search">
+					<input type="button" value="搜索" id="searchBtn">
+				</div>
+				<h5 class="title">
+					搜索历史
+					<span class="icon_clear fa fa-trash mui-pull-right">&nbsp;清空历史</span>
+				</h5>
+				<ul class="mui-table-view">
+				    <li class="mui-table-view-cell">Item 1</li>
+				    <li class="mui-table-view-cell">Item 2</li>
+				    <li class="mui-table-view-cell">Item 3</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
